@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Joshua Iliya Gizo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Iliya Gizo - Copywriting Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+  <!-- Header -->
+  <header>
     <nav>
-        <ul class="navbar">
-            <li><a href="#welcome" class="nav-link">Welcome</a></li>
-            <li><a href="#about" class="nav-link">Who We Are</a></li>
-            <li><a href="#projects" class="nav-link">What We Do</a></li>
-        </ul>
+      <div class="logo">Joshua Gizo</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#samples">Samples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Sections -->
-    <section id="welcome" class="section">
-        <h1>Welcome</h1>
-        <p>This is an introduction to your amazing portfolio site.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Hi, I'm Joshua Iliya Gizo</h1>
+    <p>Your go-to Copywriter for SaaS, E-commerce, and Health/Wellness</p>
+  </section>
 
-    <section id="about" class="section">
-        <h1>Who We Are</h1>
-        <p>A little about you and your journey into tech, cybersecurity, or copywriting.</p>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a dedicated copywriter focused on delivering persuasive content for SaaS, E-commerce, and Health niches.
+      I craft landing pages, email campaigns, and social media ads that convert.
+    </p>
+  </section>
 
-    <section id="projects" class="section">
-        <h1>What We Do</h1>
-        <p>Here are some projects you’ve worked on.</p>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Short description of your project.</p>
-            <button class="view-project-btn" data-modal="modal1">View Project</button>
-        </div>
-    </section>
+  <!-- Samples Section -->
+  <section id="samples">
+    <h2>My Work Samples</h2>
 
-    <!-- Modal for Projects -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Project 1 Details</h2>
-            <p>Here you can describe your project in detail, show images, or link to it.</p>
-        </div>
+    <div class="sample">
+      <h3>CloudEase Landing Page</h3>
+      <p>A landing page for a SaaS product to showcase its unique features.</p>
+      <a href="cloud-ease.html" target="_blank">View Project</a>
     </div>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <div class="sample">
+      <h3>Fitness App Email Campaign</h3>
+      <p>Designed an engaging email sequence to boost user sign-ups.</p>
+      <a href="fitness-email.html" target="_blank">View Project</a>
+    </div>
+
+    <div class="sample">
+      <h3>Product Descriptions for E-commerce</h3>
+      <p>Crafted SEO-optimized product descriptions for an online store.</p>
+      <a href="ecommerce-descriptions.html" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      Interested in working together? Reach out via email: 
+      <strong>joshua.iliya.gizo@example.com</strong>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Joshua Iliya Gizo. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
