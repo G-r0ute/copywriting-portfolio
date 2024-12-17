@@ -1,155 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copywriting Portfolio</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            color: #444;
-            text-align: center;
-        }
-        section {
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-        p {
-            font-size: 16px;
-        }
-        .cta {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            color: #fff;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .cta:hover {
-            background-color: #0056b3;
-        }
-        hr {
-            border: none;
-            height: 1px;
-            background-color: #ddd;
-            margin: 20px 0;
-        }
-
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-        .modal-content {
-            background-color: #fff;
-            margin: 10% auto;
-            padding: 20px;
-            border-radius: 8px;
-            width: 80%;
-            max-width: 600px;
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover {
-            color: #000;
-        }
-
-        /* Fade-in Animation */
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Iliya Gizo - Copywriting Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="fade-in">My Copywriting Portfolio</h1>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Joshua Gizo</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#samples">Samples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Tech/SaaS Section -->
-    <section id="saas">
-        <h2>CloudEase - SaaS Landing Page</h2>
-        <p>"Simplify Cloud Operations, Maximize Your Productivity"</p>
-        <a href="#" class="cta" onclick="openModal('CloudEase helps businesses streamline their cloud operations with ease.')">View Work</a>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Hi, I'm Joshua Iliya Gizo</h1>
+    <p>Your go-to Copywriter for SaaS, E-commerce, and Health/Wellness</p>
+  </section>
 
-    <hr>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a dedicated copywriter focused on delivering persuasive content for SaaS, E-commerce, and Health niches.
+      I craft landing pages, email campaigns, and social media ads that convert.
+    </p>
+  </section>
 
-    <!-- Health/Wellness Section -->
-    <section id="health">
-        <h2>FitFuel - Health Email Campaign</h2>
-        <p>"Ready to Achieve Your Health Goals?"</p>
-        <a href="#" class="cta" onclick="openModal('FitFuel provides personalized meal plans and nutrition insights for busy professionals.')">View Work</a>
-    </section>
-
-    <hr>
-
-    <!-- E-commerce Section -->
-    <section id="ecommerce">
-        <h2>SparkLights - E-commerce Ad Copy</h2>
-        <p>"Transform Your Room with SparkLights ✨"</p>
-        <a href="#" class="cta" onclick="openModal('SparkLights offers affordable, elegant lighting to brighten your home.')">View Work</a>
-    </section>
-
-    <!-- Modal for Work Samples -->
-    <div id="myModal" class="modal">
-        <div class="modal-content fade-in">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p id="modal-text"></p>
-        </div>
+  <!-- Samples Section -->
+  <section id="samples">
+    <h2>My Work Samples</h2>
+    <div class="sample-grid">
+      <div class="sample">
+        <h3>CloudEase Landing Page</h3>
+        <p>A landing page for a SaaS product to showcase its unique features.</p>
+        <a href="cloud-ease.html" onclick="openModal('CloudEase Landing Page')">View Project</a>
+      </div>
+      <div class="sample">
+        <h3>Fitness App Email Campaign</h3>
+        <p>Designed an engaging email sequence to boost user sign-ups.</p>
+        <a href="fitness-email.html" onclick="openModal('Fitness App Email Campaign')">View Project</a>
+      </div>
+      <div class="sample">
+        <h3>Product Descriptions for E-commerce</h3>
+        <p>Crafted SEO-optimized product descriptions for an online store.</p>
+        <a href="ecommerce-descriptions.html" onclick="openModal('Product Descriptions')">View Project</a>
+      </div>
     </div>
+  </section>
 
-    <script>
-        // Modal Logic
-        function openModal(content) {
-            document.getElementById('modal-text').innerText = content;
-            document.getElementById('myModal').style.display = 'block';
-        }
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in working together? Reach out via email: <strong>joshua.iliya.gizo@example.com</strong></p>
+  </section>
 
-        function closeModal() {
-            document.getElementById('myModal').style.display = 'none';
-        }
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Joshua Iliya Gizo. All Rights Reserved.</p>
+  </footer>
 
-        // Close modal on outside click
-        window.onclick = function(event) {
-            if (event.target == document.getElementById('myModal')) {
-                closeModal();
-            }
-        }
-    </script>
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+
+    function openModal(projectTitle) {
+      alert("Showing: " + projectTitle);
+      // Replace with your modal logic to display content
+    }
+  </script>
 </body>
 </html>
