@@ -1,92 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copywriting Portfolio of Joshua Iliya Gizo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background: #f4f4f4;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #007BFF;
-        }
-        .cta {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .cta a {
-            text-decoration: none;
-            color: white;
-            background: #007BFF;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Iliya Gizo - Copywriting Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Copywriting Portfolio of Joshua Iliya Gizo</h1>
-    </header>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Joshua Gizo</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#samples">Samples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello, I’m Joshua Iliya Gizo, a passionate copywriter specializing in crafting persuasive, results-driven content that connects with audiences and drives action. With expertise in direct response techniques and a knack for understanding customer psychology, I transform ideas into words that sell. Whether it's a captivating sales page, an engaging email campaign, or a high-converting landing page, I create copy that delivers measurable results.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Hi, I'm Joshua Iliya Gizo</h1>
+    <p>Your go-to Copywriter for SaaS, E-commerce, and Health/Wellness</p>
+  </section>
 
-    <section>
-        <h2>Work Samples</h2>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a dedicated copywriter focused on delivering persuasive content for SaaS, E-commerce, and Health niches.
+      I craft landing pages, email campaigns, and social media ads that convert.
+    </p>
+  </section>
 
-        <h3>1. Landing Page Copy</h3>
-        <p><strong>Objective:</strong> Increase conversions for a fictional productivity app targeting freelancers.</p>
-        <p><strong>Headline:</strong> “Finally, a Simple Way to Manage Your Freelance Projects Without the Overwhelm”</p>
-        <p><strong>Subheadline:</strong> “Stay organized, meet deadlines, and scale your business—all from one easy-to-use platform.”</p>
-        <p><strong>CTA:</strong> “Start Your Free Trial Today”</p>
+  <!-- Samples Section -->
+  <section id="samples">
+    <h2>My Work Samples</h2>
 
-        <h3>2. Email Campaign</h3>
-        <p><strong>Objective:</strong> Retarget abandoned cart users for an eco-friendly water bottle brand.</p>
-        <p><strong>Subject Line:</strong> “Still Thinking About That Bottle?”</p>
-        <p><strong>Body:</strong> Hey there, we noticed you left the EcoFlow™ Bottle in your cart. It’s not just a bottle—it’s your partner in staying hydrated, reducing waste, and making a difference. Don’t miss out! Complete your purchase within the next 24 hours to enjoy 15% off. [Complete My Order]</p>
+    <div class="sample">
+      <h3>CloudEase Landing Page</h3>
+      <p>A landing page for a SaaS product to showcase its unique features.</p>
+      <a href="#">View Project</a>
+    </div>
 
-        <h3>3. Product Description</h3>
-        <p><strong>Objective:</strong> Highlight benefits of a fictional noise-canceling headphone.</p>
-        <p>Block out the chaos and tune into clarity with SoundClear™ Pro. Featuring industry-leading noise cancellation and crystal-clear audio, these headphones are your go-to for work, travel, and relaxation. With 30 hours of battery life and ergonomic design, comfort and focus have never been easier.</p>
-    </section>
+    <div class="sample">
+      <h3>Fitness App Email Campaign</h3>
+      <p>Designed an engaging email sequence to boost user sign-ups.</p>
+      <a href="#">View Project</a>
+    </div>
 
-    <section>
-        <h2>Case Study</h2>
-        <p><strong>Project:</strong> Improving Conversion Rates for a Vegan Takeaway.</p>
-        <p><strong>Challenge:</strong> The original flyer focused solely on product listing and pricing, which failed to connect emotionally with the audience.</p>
-        <p><strong>Solution:</strong> Designed a flyer emphasizing health benefits post-lockdown, resonating with customers’ guilt about unhealthy eating. Headline: “How to Live Healthily After Lockdown.”</p>
-        <p><strong>Result:</strong> Achieved a 10x increase in orders compared to the original flyer.</p>
-    </section>
+    <div class="sample">
+      <h3>Product Descriptions for E-commerce</h3>
+      <p>Crafted SEO-optimized product descriptions for an online store.</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
 
-    <section>
-        <h2>Contact Me</h2>
-        <p><strong>Email:</strong> joshuailiyagizo@example.com</p>
-        <p><strong>Portfolio Link:</strong> [Insert Portfolio Website Link]</p>
-        <p><strong>LinkedIn:</strong> [Insert LinkedIn Profile Link]</p>
-        <div class="cta">
-            <a href="mailto:joshuailiyagizo@example.com">Get in Touch</a>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      Interested in working together? Reach out via email: 
+      <strong>joshua.iliya.gizo@example.com</strong>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Joshua Iliya Gizo. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
